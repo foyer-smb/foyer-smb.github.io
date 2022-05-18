@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="pass.css" />
+    <link rel="stylesheet" id="css" />
+    <title>Foyer SMB</title>
+    <link rel="icon" href="../Images/logo.png" />
+  </head>
+
+  <body>
+    <header>
+      <img class="headerimg" src="Images/logo.png" alt="logo Lycée" />
+      <h1 id="logo">Pass</h1>
+      <button type="button" class="notification" onclick="history.back()">
+        <img src="Images/retour.png" alt="retour" id="retour" />
+      </button>
+    </header>
+
+    <article style="text-align: center; margin-top: -50px; margin-bottom: 20px">
+      <div id="divPass">
+        <p id="user"></p>
+        <p id="day"></p>
+        <p id="heure"></p>
+        <div id="pass" style="max-height: 10%">
+          <img
+            width="300"
+            height="300"
+            alt="inscrit"
+            src="https://drive.google.com/uc?export=view&id=1-VW-UPQH4jlp7kbkLmbcpRH4rW69mKPs"
+          />
+        </div>
+        <p id="code"></p>
+      </div>
+
+      <div id="single"></div>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.3.20/JsBarcode.all.min.js"></script>
+    <script src="pass.js"></script>
+
+    <footer>
+      <div style="width: 100%; height: auto; text-align: center">
+        <hr style="width: 25%" />
+
+        <a href="../blog/devBlog.html" style="text-decoration: none"> </a
+        ><a
+          id="version"
+          href="../dev/dev.html"
+          style="font-weight: 500; font-size: 18px; letter-spacing: 1px"
+          >Version 1.2.5</a
+        >
+
+        <br />
+        <br />
+      </div>
+    </footer>
+  </body>
+</html>
