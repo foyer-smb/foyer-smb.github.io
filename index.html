@@ -2,26 +2,60 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="pass.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foyer SMB</title>
     <link rel="icon" href="../Images/logo.png" />
   </head>
   <body>
-    <label for="name">Prénon / Nom:</label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Prénom NOM"
-      required
-    />
-    <br />
-    <br />
-    <label for="code bar">Code carte :</label>
-    <input id="code bar" type="number" placeholder="00000" required />
-    <button id="confirm">Confirmer</button>
+    <header>
+      <img class="headerimg" src="Images/logo.png" alt="logo Lycée" />
+      <h1 id="logo">Pass</h1>
+      <button type="button" class="notification" id="retour">
+        <img src="Images/retour.png" alt="retour" />
+      </button>
+    </header>
+
+    <article style="text-align: center; margin-top: 2%; margin-bottom: 20px">
+      <label for="name">Prénon / Nom:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Prénom NOM"
+        required
+      />
+      <br />
+      <label for="code bar">Code carte :</label>
+      <input id="code bar" type="number" placeholder="00000" required />
+      <br />
+      <br />
+      <button id="confirm">Confirmer</button>
+      </div>
+
+      <div id="single"></div>
+    </article>
 
     <script src="index.js"></script>
+
+    <footer>
+      <div style="width: 100%; height: auto; text-align: center">
+        <hr style="width: 25%" />
+
+        <a href="../blog/devBlog.html" style="text-decoration: none" />
+        <a
+          id="version"
+          href="../dev/dev.html"
+          style="font-weight: 500; font-size: 18px; letter-spacing: 1px"
+        >
+          Version 1.2.5
+        </a>
+
+        <br />
+        <br />
+      </div>
+    </footer>
   </body>
 </html>
